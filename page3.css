@@ -6,7 +6,7 @@ body{
 {
 	width:800px;
 	height:500px;
-	
+	filter:blur(15px);
 	margin:auto;
 	margin-top:100px;
 }
@@ -26,18 +26,7 @@ body{
 .icon
 {
 	display:inline-block;
-	font-size:30px;
-	text-align:center;
-
-}
-.plus-symbol
-{
-	color:white;
-	border:2px solid red;
-	border-radius:50%;
-	background-color:red;
-	cursor:pointer;
-	width:30px;
+	font-size:42px;
 }
 .add
 {
@@ -64,9 +53,6 @@ body{
 	border-radius:10px;
 	box-shadow:3px 3px 7px 1px grey;
 }
-a{
-	text-decoration:none;
-}
 
 	
 .hline
@@ -86,11 +72,62 @@ a{
 	text-decoration:line-through;
 	color:red;
 }
-
-.card:hover{
-	box-shadow:5px 5px 5px red;
+.plus-symbol
+{
+	color:white;
+	border:2px solid red;
+	border-radius:50%;
+	background-color:red;
+}
+.new-container{
+	font-family: 'Roboto', sans-serif;
+	height:190px;
+	width:350px;
+	margin-top:200px;
+	margin-left:37.5vw;
+	text-align:center;
+	background-color:white;
+	position:absolute;
+	border:2px solid red;
+	border-radius:5px;
+	z-index:2;
+	box-shadow:5px 5px 4px 3px grey;
+}
+.add-new-list
+{
+	margin-top:25px;
+	color:red;
+	text-align:center;
+	font-size:20px;
+	
+}
+.input-box
+{
+	height:30px;
+	width:250px;
+	margin-top:30px;
+	border-color:red;
+	border-radius:5px;
+	outline:0;
+	box-shadow:2px 2px 2px 2px grey;
+}
+.add-text
+{
+	height:30px;
+	width:70px;
+	font-size:20px;
+	color:white;
+	background-color:red;
+	border-radius:15px;
+	margin:auto;
+	margin-top:30px;
+}
+.add-text:hover{
 	transform:scale(1.05,1.05);
 	cursor:pointer;
+}
+a{
+	text-decoration:none;
 }
 @media screen and (max-width:800px) 
 {
@@ -137,7 +174,15 @@ a{
 	{
 		display:none;
 	}
-	
+	.new-container{
+		width:350px;
+		margin-top:300px;
+		margin-left:9.5vw;
+	}
+	.input-box
+	{
+		width:200px;
+	}
 		
 	
 }
